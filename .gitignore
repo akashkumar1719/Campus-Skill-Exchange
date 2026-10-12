@@ -1,0 +1,24 @@
+# Dependencies
+frontend/node_modules/
+
+# Build outputs
+frontend/dist/
+backend/target/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Java and IDE files
+*.class
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db

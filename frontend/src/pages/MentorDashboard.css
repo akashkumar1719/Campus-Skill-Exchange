@@ -1,0 +1,1748 @@
+.mentor-dashboard {
+  min-height: 100vh;
+  background: #f7f8fc;
+}
+
+.mentor-dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.dashboard-eyebrow {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #6b7280;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.dashboard-header p {
+  margin: 10px 0 0;
+  color: #6b7280;
+}
+
+.mentor-dashboard-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111827;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.dashboard-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+}
+
+.dashboard-stat-card > span {
+  font-size: 28px;
+}
+
+.dashboard-stat-card small {
+  display: block;
+  margin-bottom: 5px;
+  color: #6b7280;
+}
+
+.dashboard-stat-card strong {
+  font-size: 24px;
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 24px;
+}
+
+.dashboard-main-card,
+.dashboard-side-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.dashboard-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.dashboard-card-header h2,
+.dashboard-side-card h2 {
+  margin: 0;
+}
+
+.dashboard-card-header p {
+  margin: 8px 0 0;
+  color: #6b7280;
+}
+
+.dashboard-card-header a {
+  color: #111827;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dashboard-empty {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.dashboard-empty-icon {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.dashboard-empty h3 {
+  margin: 0 0 8px;
+}
+
+.dashboard-empty p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.dashboard-side-card h2 {
+  margin-bottom: 18px;
+}
+
+.dashboard-side-card > a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eef0f3;
+  color: #111827;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.dashboard-side-card > a:last-child {
+  border-bottom: none;
+}
+
+.dashboard-side-card > a span {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.dashboard-side-card > a small {
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+/* =========================================
+   MENTOR PROFILE OVERVIEW
+========================================= */
+
+.mentor-overview-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 28px;
+  margin-bottom: 28px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+}
+
+.mentor-overview-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mentor-overview-avatar {
+  width: 78px;
+  height: 78px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #111827;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.mentor-overview-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mentor-overview-name h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.mentor-verified-badge {
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: #ecfdf5;
+  color: #047857;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.mentor-overview-role {
+  margin: 6px 0 4px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.mentor-overview-academic {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.mentor-overview-stats {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 12px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.mentor-overview-stats strong {
+  color: #111827;
+}
+
+.mentor-overview-right {
+  min-width: 300px;
+}
+
+.mentor-overview-right > p {
+  margin: 0 0 10px;
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.mentor-overview-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 18px;
+}
+
+.mentor-overview-skills span {
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #f3f4f6;
+  color: #374151;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.mentor-profile-link {
+  display: inline-block;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mentor-profile-link:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   MENTOR UPCOMING SESSIONS
+========================================= */
+
+.mentor-upcoming-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.mentor-session-item {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1.2fr auto;
+  align-items: center;
+  gap: 20px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: #fafafa;
+  transition: 0.2s ease;
+}
+
+.mentor-session-item:hover {
+  border-color: #d1d5db;
+  transform: translateY(-1px);
+}
+
+.mentor-session-date {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mentor-session-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f3f4f6;
+  font-size: 20px;
+}
+
+.mentor-session-date-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mentor-session-date-info strong {
+  font-size: 14px;
+  color: #111827;
+}
+
+.mentor-session-date-info span {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.mentor-session-student {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mentor-session-student strong {
+  font-size: 14px;
+  color: #111827;
+}
+
+.mentor-session-student span {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.mentor-session-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mentor-session-details span {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.mentor-session-status {
+  color: #047857 !important;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   MENTOR SESSION ACTIONS
+========================================= */
+
+.mentor-session-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  min-width: 125px;
+}
+
+.mentor-start-session-button,
+.mentor-join-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 9px;
+  background: #111827;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+  white-space: nowrap;
+}
+
+.mentor-start-session-button:hover,
+.mentor-join-button:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+.mentor-view-booking-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  background: white;
+  color: #111827;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.mentor-view-booking-button:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+  .mentor-session-item {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mentor-session-details {
+    grid-column: 1;
+  }
+
+  .mentor-session-actions {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+  }
+}
+
+@media (max-width: 900px) {
+  .dashboard-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-content {
+    grid-template-columns: 1fr;
+  }
+
+  .mentor-overview-card {
+    flex-direction: column;
+  }
+
+  .mentor-overview-right {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .mentor-session-item {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .mentor-session-details {
+    grid-column: auto;
+  }
+
+  .mentor-session-actions {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+  }
+
+  .mentor-start-session-button,
+  .mentor-join-button,
+  .mentor-view-booking-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .mentor-dashboard-container {
+    padding: 28px 16px 40px;
+  }
+
+  .dashboard-header {
+    align-items: flex-start;
+  }
+
+  .dashboard-header h1 {
+    font-size: 28px;
+  }
+
+  .mentor-dashboard-avatar {
+    width: 56px;
+    height: 56px;
+    font-size: 18px;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-card-header {
+    flex-direction: column;
+  }
+
+  .mentor-overview-card {
+    padding: 20px;
+  }
+
+  .mentor-overview-left {
+    align-items: flex-start;
+  }
+
+  .mentor-overview-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 19px;
+  }
+
+  .mentor-overview-name {
+    flex-wrap: wrap;
+  }
+
+  .mentor-overview-name h2 {
+    font-size: 19px;
+  }
+
+  .mentor-overview-stats {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+
+/* =========================================
+   MENTOR BOOKING MANAGEMENT
+========================================= */
+
+.mentor-bookings-card {
+  margin-top: 28px;
+  padding: 24px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+}
+
+.mentor-bookings-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.mentor-bookings-header .dashboard-eyebrow {
+  margin-bottom: 6px;
+}
+
+.mentor-bookings-header h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #111827;
+}
+
+.mentor-bookings-header p:not(.dashboard-eyebrow) {
+  margin: 7px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.mentor-bookings-view-all {
+  color: #111827;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.mentor-bookings-view-all:hover {
+  text-decoration: underline;
+}
+
+.mentor-bookings-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.mentor-booking-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr 1fr 1.2fr 120px;
+  align-items: center;
+  gap: 18px;
+  padding: 17px 0;
+  border-top: 1px solid #eef0f3;
+}
+
+.mentor-booking-student {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mentor-booking-avatar {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #111827;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.mentor-booking-student > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mentor-booking-student strong {
+  color: #111827;
+  font-size: 14px;
+}
+
+.mentor-booking-student span {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.mentor-booking-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mentor-booking-info small {
+  color: #9ca3af;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mentor-booking-info strong {
+  color: #374151;
+  font-size: 13px;
+}
+
+.mentor-booking-status-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mentor-booking-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.mentor-booking-status.confirmed {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.mentor-booking-status.cancelled {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.mentor-booking-status.pending {
+  background: #fffbeb;
+  color: #b45309;
+}
+
+.mentor-bookings-empty {
+  text-align: center;
+  padding: 50px 20px 35px;
+  border-top: 1px solid #eef0f3;
+}
+
+.mentor-bookings-empty h3 {
+  margin: 0 0 8px;
+}
+
+.mentor-bookings-empty p {
+  margin: 0;
+  color: #6b7280;
+}
+
+
+/* =========================================
+   BOOKING MANAGEMENT RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+  .mentor-booking-row {
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 16px;
+  }
+
+  .mentor-booking-status-wrapper {
+    grid-column: 3;
+    grid-row: 1;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 700px) {
+  .mentor-bookings-card {
+    padding: 20px;
+  }
+
+  .mentor-bookings-header {
+    flex-direction: column;
+  }
+
+  .mentor-booking-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 18px 0;
+  }
+
+  .mentor-booking-student {
+    grid-column: 1 / -1;
+  }
+
+  .mentor-booking-status-wrapper {
+    grid-column: 2;
+    grid-row: auto;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 500px) {
+  .mentor-booking-row {
+    grid-template-columns: 1fr;
+  }
+
+  .mentor-booking-student {
+    grid-column: auto;
+  }
+
+  .mentor-booking-status-wrapper {
+    grid-column: auto;
+  }
+}
+
+
+/* =========================================
+   BOOKING STATUS SUMMARY
+========================================= */
+
+.mentor-booking-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.mentor-filter-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fafafa;
+  color: #111827;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.mentor-filter-card:hover {
+  border-color: #9ca3af;
+  transform: translateY(-1px);
+}
+
+.mentor-filter-card.active {
+  border-color: #111827;
+  background: #f3f4f6;
+}
+
+.mentor-filter-card > span {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  font-size: 15px;
+}
+
+.mentor-filter-card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.mentor-filter-card small {
+  color: #6b7280;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.mentor-filter-card strong {
+  color: #111827;
+  font-size: 18px;
+}
+
+
+/* =========================================
+   BOOKING STATUS RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+  .mentor-booking-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .mentor-booking-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .mentor-filter-card {
+    width: 100%;
+  }
+}
+
+
+/* =========================================
+   MENTOR AVAILABILITY
+========================================= */
+
+.mentor-availability-card {
+  margin-top: 28px;
+  padding: 24px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+}
+
+.mentor-availability-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.mentor-availability-header h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #111827;
+}
+
+.mentor-availability-header p:not(.dashboard-eyebrow) {
+  margin: 7px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.mentor-add-availability-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 9px;
+  background: #111827;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.2s ease;
+}
+
+.mentor-add-availability-button:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+
+/* AVAILABILITY LIST */
+
+.mentor-availability-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.mentor-availability-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr 1fr auto;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 0;
+  border-top: 1px solid #eef0f3;
+}
+
+.mentor-availability-day {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mentor-availability-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f3f4f6;
+  font-size: 20px;
+}
+
+.mentor-availability-day > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mentor-availability-day strong {
+  color: #111827;
+  font-size: 14px;
+}
+
+.mentor-availability-day span {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.mentor-availability-time {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mentor-availability-time small {
+  color: #9ca3af;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mentor-availability-time strong {
+  color: #374151;
+  font-size: 13px;
+}
+
+.mentor-availability-status span {
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #ecfdf5;
+  color: #047857;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.mentor-availability-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.mentor-availability-edit,
+.mentor-availability-delete {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.mentor-availability-edit {
+  border: 1px solid #d1d5db;
+  background: white;
+  color: #111827;
+}
+
+.mentor-availability-edit:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.mentor-availability-delete {
+  border: 1px solid #fecaca;
+  background: #fff;
+  color: #b91c1c;
+}
+
+.mentor-availability-delete:hover {
+  background: #fef2f2;
+}
+
+
+/* =========================================
+   AVAILABILITY RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+  .mentor-availability-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .mentor-availability-status {
+    grid-column: 1;
+  }
+
+  .mentor-availability-actions {
+    grid-column: 2;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+  .mentor-availability-header {
+    flex-direction: column;
+  }
+
+  .mentor-add-availability-button {
+    width: 100%;
+  }
+
+  .mentor-availability-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .mentor-availability-status,
+  .mentor-availability-actions {
+    grid-column: auto;
+  }
+
+  .mentor-availability-actions {
+    justify-content: flex-start;
+  }
+}
+
+
+/* =========================================
+   ADD AVAILABILITY FORM
+========================================= */
+
+.mentor-availability-form-title {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 2px;
+}
+
+.mentor-availability-form-title strong {
+  color: #111827;
+  font-size: 15px;
+}
+
+.mentor-availability-form-title span {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.mentor-availability-form {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr auto;
+  align-items: end;
+  gap: 16px;
+  margin-bottom: 22px;
+  padding: 18px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.mentor-availability-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.mentor-availability-form-field label {
+  color: #374151;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.mentor-availability-form-field select,
+.mentor-availability-form-field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  color: #111827;
+  font-size: 13px;
+  outline: none;
+}
+
+.mentor-availability-form-field select:focus,
+.mentor-availability-form-field input:focus {
+  border-color: #111827;
+}
+
+.mentor-availability-form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.mentor-save-availability-button,
+.mentor-cancel-availability-button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+  white-space: nowrap;
+}
+
+.mentor-save-availability-button {
+  border: 1px solid #111827;
+  background: #111827;
+  color: white;
+}
+
+.mentor-save-availability-button:hover {
+  opacity: 0.9;
+}
+
+.mentor-cancel-availability-button {
+  border: 1px solid #d1d5db;
+  background: white;
+  color: #374151;
+}
+
+.mentor-cancel-availability-button:hover {
+  background: #f3f4f6;
+}
+
+@media (max-width: 900px) {
+  .mentor-availability-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mentor-availability-form-actions {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .mentor-availability-form {
+    grid-template-columns: 1fr;
+  }
+
+  .mentor-availability-form-actions {
+    grid-column: auto;
+    width: 100%;
+  }
+
+  .mentor-save-availability-button,
+  .mentor-cancel-availability-button {
+    flex: 1;
+  }
+}
+
+
+/* =========================================
+   AVAILABILITY STATUS CONTROLS
+========================================= */
+
+.availability-status-available,
+.availability-status-unavailable {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.availability-status-available {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.availability-status-unavailable {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.mentor-availability-toggle {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  color: #374151;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.mentor-availability-toggle:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+
+/* =========================================
+   SESSION STARTED
+========================================= */
+
+.mentor-session-started-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.mentor-session-started-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #15803d;
+}
+
+.mentor-session-started-panel strong {
+  font-size: 13px;
+  color: #166534;
+}
+
+.mentor-session-started-panel p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #4b5563;
+}
+
+.mentor-session-active-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #f0fdf4;
+  color: #15803d;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.mentor-session-active-status span {
+  font-size: 12px;
+}
+
+
+/* =========================================
+   STUDENT REVIEWS
+========================================= */
+
+.mentor-reviews-card {
+  margin-top: 32px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.mentor-reviews-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.mentor-reviews-header h2 {
+  margin: 6px 0 8px;
+  font-size: 24px;
+  color: #111827;
+}
+
+.mentor-reviews-header p {
+  margin: 0;
+  color: #64748b;
+}
+
+.mentor-reviews-summary {
+  min-width: 120px;
+  text-align: right;
+}
+
+.mentor-reviews-summary strong {
+  display: block;
+  font-size: 22px;
+  color: #111827;
+}
+
+.mentor-reviews-summary span {
+  display: block;
+  margin-top: 4px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.mentor-reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mentor-review-item {
+  padding: 22px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #f8fafc;
+}
+
+.mentor-review-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.mentor-review-student {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mentor-review-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111827;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.mentor-review-student strong {
+  display: block;
+  color: #111827;
+  font-size: 15px;
+}
+
+.mentor-review-student span {
+  display: block;
+  margin-top: 3px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.mentor-review-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mentor-review-rating > span {
+  display: inline-flex;
+  align-items: center;
+  color: #f59e0b;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.mentor-review-rating > span > span {
+  display: inline-block;
+}
+
+.mentor-review-rating strong {
+  color: #111827;
+  font-size: 14px;
+}
+
+.mentor-review-comment {
+  margin: 18px 0 12px;
+  color: #334155;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.mentor-review-date {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.mentor-reviews-empty {
+  padding: 40px 20px;
+  text-align: center;
+  border: 1px dashed #d1d5db;
+  border-radius: 16px;
+}
+
+.mentor-reviews-empty h3 {
+  margin: 12px 0 6px;
+  color: #111827;
+}
+
+.mentor-reviews-empty p {
+  margin: 0;
+  color: #64748b;
+}
+
+
+/* =========================================
+   STUDENT REVIEWS RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+  .mentor-reviews-header {
+    flex-direction: column;
+  }
+
+  .mentor-reviews-summary {
+    text-align: left;
+  }
+
+  .mentor-review-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+
+/* =========================================
+   STUDY MATERIALS
+========================================= */
+
+.mentor-materials-card {
+  margin-top: 28px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.mentor-materials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.mentor-materials-header h2 {
+  margin: 6px 0;
+  color: #111827;
+}
+
+.mentor-materials-header p {
+  margin: 6px 0 0;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.mentor-add-material-button,
+.mentor-save-material-button {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mentor-add-material-button:hover,
+.mentor-save-material-button:hover {
+  background: #4338ca;
+}
+
+.mentor-save-material-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.mentor-material-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 26px;
+  padding: 22px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.mentor-material-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mentor-material-form-field label {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.mentor-material-form-field input,
+.mentor-material-form-field textarea,
+.mentor-material-form-field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #111827;
+  font: inherit;
+}
+
+.mentor-material-form-field input:focus,
+.mentor-material-form-field textarea:focus,
+.mentor-material-form-field select:focus {
+  outline: 2px solid #a5b4fc;
+  border-color: #6366f1;
+}
+
+.mentor-material-form-field small {
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.mentor-material-form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.mentor-cancel-material-button {
+  padding: 12px 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #374151;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mentor-material-success,
+.mentor-material-error {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  border-radius: 9px;
+  line-height: 1.5;
+}
+
+.mentor-material-success {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.mentor-material-error {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.mentor-materials-empty {
+  padding: 30px 16px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.mentor-materials-empty h3 {
+  margin: 12px 0 6px;
+  color: #374151;
+}
+
+.mentor-materials-empty p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.mentor-materials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mentor-material-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.mentor-material-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #eef2ff;
+  font-size: 24px;
+}
+
+.mentor-material-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.mentor-material-title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mentor-material-title-row h3 {
+  margin: 0;
+  color: #111827;
+  overflow-wrap: anywhere;
+}
+
+.mentor-material-type {
+  padding: 4px 8px;
+  border-radius: 20px;
+  background: #eef2ff;
+  color: #4338ca;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.mentor-material-info > p {
+  margin: 8px 0;
+  color: #6b7280;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.mentor-material-info > small {
+  color: #9ca3af;
+}
+
+.mentor-material-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.mentor-open-material-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 13px;
+  border-radius: 8px;
+  background: #eef2ff;
+  color: #4338ca;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.mentor-open-material-button:hover {
+  background: #e0e7ff;
+}
+
+.mentor-delete-material-button {
+  padding: 9px 13px;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #b91c1c;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mentor-delete-material-button:hover {
+  background: #fef2f2;
+}
+
+@media (max-width: 640px) {
+  .mentor-materials-card {
+    padding: 18px;
+  }
+
+  .mentor-materials-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .mentor-material-form {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .mentor-material-item {
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .mentor-material-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}

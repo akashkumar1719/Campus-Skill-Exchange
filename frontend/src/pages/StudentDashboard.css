@@ -1,0 +1,134 @@
+
+.student-dashboard {
+  min-height: 100vh;
+  background: #f6f8fc;
+}
+
+.student-dashboard-container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 40px 0 64px;
+}
+
+.student-dashboard-header {
+  padding: 28px 0;
+}
+
+.student-dashboard-header h1 {
+  margin: 10px 0;
+  color: #172033;
+}
+
+.student-dashboard-header p {
+  color: #64748b;
+}
+
+.student-dashboard-header a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.student-materials-section {
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e5eaf2;
+  border-radius: 16px;
+}
+
+.student-materials-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.student-materials-heading h2 {
+  margin: 0;
+}
+
+.student-materials-heading span {
+  color: #64748b;
+}
+
+.student-materials-list {
+  display: grid;
+  gap: 16px;
+}
+
+.student-material-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid #e5eaf2;
+  border-radius: 12px;
+}
+
+.student-material-icon {
+  font-size: 28px;
+}
+
+.student-material-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.student-material-info > span {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.student-material-info h3 {
+  margin: 6px 0;
+  color: #172033;
+}
+
+.student-material-info p,
+.student-material-info small {
+  color: #64748b;
+  overflow-wrap: anywhere;
+}
+
+.student-material-open-button {
+  display: inline-block;
+  padding: 10px 14px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.student-material-open-button:hover {
+  background: #1d4ed8;
+}
+
+.student-materials-empty {
+  padding: 32px 12px;
+  text-align: center;
+  color: #64748b;
+}
+
+@media (max-width: 650px) {
+  .student-material-card {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .student-material-info {
+    flex-basis: calc(100% - 52px);
+  }
+
+  .student-material-open-button {
+    margin-left: 44px;
+  }
+
+  .student-materials-heading {
+    align-items: flex-start;
+  }
+}
